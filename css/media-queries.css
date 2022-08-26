@@ -1,0 +1,121 @@
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .drop-down-menu a {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background-color: #4A216F;
+    }
+
+    .drop-down-menu a:hover {
+        color: #ffffff;
+    }
+
+    .search-icon a {
+        color: black;
+        background-color: #FF4A52;
+        width: 45px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-icon a:hover {
+        color: #ffffff;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .menu {
+        width: 150px;
+        height: 200px;
+    }
+
+    .menu li {
+        font-size: 18px;
+        padding: 6px;
+    }
+    .popular-content{
+        grid-template-areas: 
+        'image1 image2'
+        'image3 image4'
+        'image5 image6';
+        justify-content: center;
+    }
+    footer{
+        flex-direction: row;
+        height: 200px;
+    }
+}
+
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    nav li {
+        display: inline-block;
+        padding: 0 19px;
+        margin-top: 13px;
+        font-size: 19px;
+    }
+
+    .drop-down-menu {
+        display: none;
+    }
+
+    .search-icon a {
+        width: 100px;
+        right: 0;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .search {
+        flex-direction: row;
+        padding: 30px 0;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .search input {
+        padding: 0 5px;
+        width: 20vw;
+    }
+    .search h3 {
+        padding-top: 0;
+    }
+    .popular-content{
+        grid-template-areas: 
+        'image1 image2 image3'
+        'image4 image5 image6';
+        justify-content: center;
+    }
+    .news{
+        flex-direction: row;
+    }
+    .news-form{
+        flex-direction: row;
+        margin-left: 10px;
+    }
+    .news button{
+        width: 100px;
+        margin-left: 5px;
+    }
+
+}

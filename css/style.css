@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    transition: color .2s;
+}
+
+a:hover {
+    color: #FF4A52;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    transition: color .2s;
+}
+
+li:hover {
+    color: #FF4A52;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.font-15 {
+    font-size: 15px !important;
+}
+
+header {
+    background-color: #ffffff;
+    justify-content: space-around;
+    padding: 25px 0;
+    position: relative;
+}
+
+nav li {
+    display: none;
+}
+
+.menu {
+    background-color: #4A216F;
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    right: 30px;
+    top: 98px;
+    border-radius: 7px;
+    display: none;
+}
+
+.menu li {
+    color: lightgrey;
+    padding: 4px;
+}
+
+.menu li:hover {
+    color: #FF4A52;
+}
+
+.show {
+    display: inline !important;
+}
+
+.slider {
+    background-image: url('../images/banner2.png');
+    height: 50vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.slider h3 {
+    font-size: 8vw;
+    color: #ffffff;
+    font-family: "Nothing You Could Do", cursive;
+}
+
+.slider p {
+    font-size: 2.5vw;
+    color: #ffffff;
+}
+
+.slider button {
+    font-size: 1.8vw;
+    padding: 11px 19px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #1EC6B6;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+.slider button:hover {
+    background-color: #FF4A52;
+
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #040E27;
+}
+
+.search h3 {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.search input {
+    background-color: #040E27;
+    border: 1px solid #363E52;
+    color: #ffffff;
+    width: 73vw;
+    font-size: 13px;
+    height: 50px;
+    border-radius: 6px;
+    margin: 10px 0;
+    padding: 0 0 0 40px;
+}
+
+.search button {
+    font-size: 18px;
+    padding: 14px 35px;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: #FF4A52;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.search button:hover {
+    background-color: #1EC6B6;
+}
+
+.popular-header h3 {
+    font-size: 38px;
+    color: #040E27;
+}
+
+.popular-header p {
+    color: #7A838B;
+}
+
+.popular {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.popular-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.popular-content {
+    display: grid;
+    width: 50%;
+    grid-template-areas:
+        'image1'
+        'image2'
+        'image3'
+        'image4'
+        'image5'
+        'image6';
+    margin: 0 auto;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 60px;
+    position: relative;
+}
+
+.image1 {
+    grid-area: image1;
+}
+
+.image2 {
+    grid-area: image2;
+}
+
+.image3 {
+    grid-area: image3;
+}
+
+.image4 {
+    grid-area: image4;
+}
+
+.image5 {
+    grid-area: image5;
+}
+
+.image6 {
+    grid-area: image6;
+}
+
+article p {
+    position: absolute;
+    left: 20px;
+    bottom: 25px;
+    font-size: 22px;
+    z-index: 1000;
+    color: #fff;
+}
+
+article p a {
+    background-color: #1EC6B6;
+    margin-left: 15px;
+    font-size: 13px;
+    border-radius: 20px;
+    color: #fff;
+    padding: 5px 5px;
+}
+
+article img {
+    height: 280px;
+}
+
+.popular-content article {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.popular-content article:hover {
+    transform: translateY(-10px);
+}
+
+.popular-content article:before {
+    background: linear-gradient(to bottom, rgba(4, 14, 39, 0) 0%, rgba(4, 14, 39, 0.7) 100%);
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 99%;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.popular-content article:hover .popular-info p {
+    color: #FF4A52;
+    transition: 0.3s;
+}
+
+.popular-content article:hover .popular-info a {
+    background-color: #FF4A52;
+    transition: 0.3s;
+}
+
+.news {
+    background-image: url("../images/newsletter.png");
+    background-position: 65% 65%;
+    background-size: cover;
+    height: 250px;
+    position: relative;
+    margin-top: 30px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.news::before {
+    position: absolute;
+    content: "";
+    background-color: #040E27;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.news-text,
+.news-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.news h4 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: auto;
+    z-index: 1000;
+}
+
+.news p {
+    color: #AAB1B7;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    z-index: 1000;
+}
+
+.news input {
+    width: 40vw;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    padding-left: 15px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    z-index: 1000;
+}
+
+.news button {
+    font-size: 18px;
+    padding: 14px 15px;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: #FF4A52;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    width: 40vw;
+    height: 50px;
+    margin-top: 10px;
+    z-index: 1000;
+}
+
+.news button:hover {
+    background-color: #1EC6B6;
+}
+
+.video {
+    background-image: url("../images/video.png");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.video::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #040E27;
+    opacity: 0.2;
+    position: absolute;
+}
+
+.video h3 {
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    font-size: 7vw;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-bottom: 15px;
+    z-index: 1000;
+}
+
+.video a {
+    color: #ffffff;
+    background-color: #1EC6B6;
+    padding: 30px 35px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.video a:hover {
+    background-color: #FF4A52;
+    transition: 0.4s;
+}
+
+footer {
+    background-color: #040E27;
+    justify-content: space-evenly;
+    padding: 30px 0 40px 25px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer li {
+    color: #AAB1B7;
+    line-height: 25px;
+}
+.footer-part-two{
+    width: 200px;
+}
+
+.footer-part-two h3 {
+    font-size: 20px;
+    color: #ffffff;
+    
+}
+.footer-list1 li{
+    width: 50%;
+    float: left;
+    font-size: 14px;
+    line-height: 35px;
+}
